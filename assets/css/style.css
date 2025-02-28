@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+/*!
+ * Main v1 (https://main.com/)
+ * Copyright 2011-2024 The zCowBoY. Authors
+ * Licensed under MIT (https://github.com/LICENSE)
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 720px;
+    height: 1600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .user-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+main {
+    padding: 20px;
+}
+
+.tasks, .habits, .rewards {
+    margin-bottom: 30px;
+}
+
+.tasks h2, .habits h2, .rewards h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #4a90e2;
+}
+
+.tasks ul {
+    list-style-type: none;
+}
+
+.tasks li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tasks li label {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.tasks li .xp-reward {
+    background-color: #4a90e2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.habit-grid, .reward-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.habit-card, .reward-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.habit-card h3, .reward-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.habit-card p, .reward-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.habit-card button, .reward-card button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.habit-card button:hover, .reward-card button:hover {
+    background-color: #357abd;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4a90e2;
+    color: white;
+    margin-top: 30px;
+}
