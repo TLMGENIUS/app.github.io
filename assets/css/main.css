@@ -1,0 +1,26 @@
+/* Estilo do nav inferior */
+.bottom-nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 20px 0;
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    width: 720px;
+}
+
+.bottom-nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-nav button:hover {
+    background-color: #777;
+}
