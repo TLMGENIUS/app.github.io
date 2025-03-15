@@ -16,7 +16,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-image: url('../img/spaceship_quarters_bg.png');
-    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    background-size: 90% 90%; /* Garante que a imagem cubra todo o fundo */
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
