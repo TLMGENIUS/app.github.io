@@ -3,125 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Personagem - Mobile</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('https://i.imgur.com/your-background-image-url.png');
-            background-size: cover; /* Garante que a imagem cubra todo o fundo */
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow-x: hidden; /* Previne a rolagem horizontal */
-        }
-        .character-container {
-            position: relative;
-            width: 90%; /* Ajustado para ocupar mais espaço em telas menores */
-            max-width: 400px; /* Largura máxima ajustada para mobile */
-            text-align: center;
-        }
-        .character-image {
-            width: 100%;
-            height: auto;
-            border-radius: 10px; /* Adiciona bordas arredondadas para um visual mais moderno */
-        }
-        .character-name {
-            margin-top: 15px;
-            font-size: 20px; /* Tamanho da fonte reduzido para caber melhor */
-            color: #333;
-        }
-        .skill-container {
-            display: flex;
-            flex-wrap: wrap; /* Permite que as habilidades sejam dispostas em várias linhas */
-            justify-content: space-around;
-            margin-top: 15px;
-        }
-        .skill-card {
-            width: 48%; /* Cada carta ocupa quase metade da largura para caber duas por linha */
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 10px; /* Espaçamento entre as linhas */
-        }
-        .skill-image {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .skill-name {
-            margin-top: 8px;
-            font-size: 14px; /* Tamanho da fonte reduzido */
-            color: #333;
-        }
-        .skill-level {
-            font-size: 12px; /* Tamanho da fonte reduzido */
-            color: #666;
-        }
-        .button-container {
-            display: flex;
-            flex-direction: column; /* Botões empilhados verticalmente */
-            gap: 10px; /* Espaçamento entre os botões */
-            margin-top: 20px;
-        }
-        .button {
-            padding: 10px;
-            font-size: 16px; /* Tamanho da fonte reduzido */
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            width: 100%; /* Botões ocupam toda a largura */
-        }
-        .back-button {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .start-button {
-            background-color: #FFC107;
-            color: white;
-        }
-        @media (max-width: 600px) {
-            /* Estilos específicos para dispositivos móveis */
-            .character-name {
-                font-size: 18px;
-            }
-            .skill-card {
-                width: 100%; /* Uma habilidade por linha em telas muito pequenas */
-            }
-            .button {
-                font-size: 14px;
-            }
-        }
-    </style>
+    <title>Tela de Personagem</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
     <div class="character-container">
-        <img src="https://i.imgur.com/your-character-image-url.png" alt="Personagem" class="character-image">
+        <img src="https://www.fightersgeneration.com/characters/aba-anistance.gif" alt="Personagem" class="character-image">
         <div class="character-name">zAgron</div>
         <div class="skill-container">
             <div class="skill-card">
-                <img src="https://i.imgur.com/your-skill1-image-url.png" alt="Skill 1" class="skill-image">
-                <div class="skill-name">Oráculo</div>
-                <div class="skill-level">Lv.53</div>
-            </div>
-            <div class="skill-card">
-                <img src="https://i.imgur.com/your-skill2-image-url.png" alt="Skill 2" class="skill-image">
+                <img src="./assets/img/icon.png" alt="Skill 2" class="skill-image">
                 <div class="skill-name">Olho Águia</div>
                 <div class="skill-level">Lv.2</div>
-            </div>
-            <div class="skill-card">
-                <img src="https://i.imgur.com/your-skill3-image-url.png" alt="Skill 3" class="skill-image">
-                <div class="skill-name">Chicote Sombrio</div>
-                <div class="skill-level">Lv.62</div>
-            </div>
-            <div class="skill-card">
-                <img src="https://i.imgur.com/your-skill4-image-url.png" alt="Skill 4" class="skill-image">
-                <div class="skill-name">Estudioso</div>
-                <div class="skill-level">Lv.72</div>
             </div>
         </div>
         <div class="button-container">
