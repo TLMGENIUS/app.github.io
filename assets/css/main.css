@@ -1,26 +1,80 @@
-/* Estilo do nav inferior */
-.bottom-nav {
-    background-color: #333;
+/**/
+
+.character-container {
+    position: relative;
+    width: 15%; /* Ajustado para ocupar mais espaço em telas menores */
+    max-width: 400px; /* Largura máxima ajustada para mobile */
+    text-align: center;
+}
+.character-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adiciona bordas arredondadas para um visual mais moderno */
+}
+.character-name {
+    margin-top: 15px;
+    font-size: 20px; /* Tamanho da fonte reduzido para caber melhor */
+    color: #333;
+}
+.skill-container {
     display: flex;
+    flex-wrap: wrap; /* Permite que as habilidades sejam dispostas em várias linhas */
     justify-content: space-around;
-    padding: 0 0 20px 0;
-    position: fixed;
-    bottom: 80px;
-    right: 930px;
-    width: 700px;
+    margin-top: 15px;
 }
-
-.bottom-nav button {
-    background-color: #555;
-    color: white;
+.skill-card {
+    width: 48%; /* Cada carta ocupa quase metade da largura para caber duas por linha */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Espaçamento entre as linhas */
+}
+.skill-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.skill-name {
+    margin-top: 8px;
+    font-size: 14px; /* Tamanho da fonte reduzido */
+    color: #333;
+}
+.skill-level {
+    font-size: 12px; /* Tamanho da fonte reduzido */
+    color: #666;
+}
+.button-container {
+    display: flex;
+    flex-direction: column; /* Botões empilhados verticalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 20px;
+}
+.button {
+    padding: 10px;
+    font-size: 16px; /* Tamanho da fonte reduzido */
     border: none;
-    padding: 10px 30px;
-    font-size: 16px;
+    border-radius: 20px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    width: 100%; /* Botões ocupam toda a largura */
 }
-
-.bottom-nav button:hover {
-    background-color: #777;
+.back-button {
+    background-color: #4CAF50;
+    color: white;
+}
+.start-button {
+    background-color: #FFC107;
+    color: white;
+}
+@media (max-width: 600px) {
+    /* Estilos específicos para dispositivos móveis */
+    .character-name {
+        font-size: 18px;
+    }
+    .skill-card {
+        width: 100%; /* Uma habilidade por linha em telas muito pequenas */
+    }
+    .button {
+        font-size: 14px;
+    }
 }
